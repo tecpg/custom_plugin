@@ -12,9 +12,9 @@ $response = array("error" => false);
 if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password'])){
  
     // receiving the post params
-    $name = input($_POST['name']);
-    $email = input($_POST['email']);
-    $password = input($_POST['password']);
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
  
 
     $response["error"] = FALSE;
